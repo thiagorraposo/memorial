@@ -1,7 +1,63 @@
+@charset "UTF-8";
+/*PRE-DEFINIÇÕES PADRÃO*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+i {
+  color: #fff;
+}
+
+.header-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.header-icons a:hover i {
+  color: #d34040;
+  animation: translateY 0.8s infinite alternate;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
 body {
-    background-color: rgb(16, 15, 15);
-    color: aliceblue;
+  font-family: "Sora", sans-serif;
+  background-color: #06121e;
 }
-h1 {
-    text-align: center;
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
 }
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
